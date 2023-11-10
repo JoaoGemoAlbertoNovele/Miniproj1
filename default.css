@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: Century Gothic;
+
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 10px;
+    width: 25%;
+    height: 73vh;
+    background: rgb(0, 71, 104);
+
+}
+
+.menu ul li{
+    padding: 15px 10px;
+    list-style: none;
+    width: 100%;
+    border-bottom: 1px solid silver;
+
+}
+.menu ul li a{
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+}
+#content{
+
+    background: white;
+    padding: 0px 25px;
+    height: 77vh;
+
+}
+.container{
+    display: flex;
+}
+.footer{
+    background: black;
+    height: 25vh;
+    width: 90;
+}
+.perfile{
+    position: absolute;
+    width: 25%;
+    height: 200px;
+    background: url(img/perfileJonNovel.png)none;
+    background-size: contain;
+    z-index: -1;
+
+}
+
+.conteudo{
+
+}
+.socials{
+    display: flex;
+    flex-direction: row;
+  
+    color: white;
+}
+.socials ul{
+    min-height: 25vh;
+    display: flex;
+    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    
+}
+.socials ul li{
+    padding: 10px 25px;
+}
+h1{
+    padding: 40px 0px;
+    font-size: 30px;
+    text-align: center;
+ 
+
+}
+

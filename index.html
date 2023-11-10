@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu CV</title>
+    <link rel="stylesheet" href="default.css">
+
+
+    <script>
+        var paginas={
+
+            'home':`
+            <br>
+        <br>
+        <br>
+        <br>
+        <br>
+            <center><img src='img/home.png'/></center>
+            <h1>MEU PORTFOLIO</h1>
+
+            `,
+            'about':`
+            <div class='conteudo'>
+                <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <center><img src='img/quem.png'/></center>
+            <h1>QUEM SOU EU </h1>
+
+            <p>
+                Profissional Técnico qualificado inscrito na ordem de Engenheiros de Moçambique. Com uma
+perspicácia Técnico bem desenvolvida reflectindo uma carreira de habilidades e de liderança com
+enfâse em Administração de Sistemas, Gestão de Datacenter , Administração de Redes, Sistemas de
+Segurança Empresarial(Segurança Electronica e Segurança Cibernética) e Inovação.
+                </p>
+            
+            </div>
+            `,
+            'services':`
+            <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <center><img src='img/servicos.png'/></center>
+            <h1>OQUE EU FAÇO</h1>
+            
+            <p>
+            Actualmente Sou Administrador de Sistemas da Fundação Manhiça e lidero a componente
+técnica-TI do Projecto de Construção do Novo Datacenter CISM certificado pela ECRIN -
+European Clinical Research Infrastructure Network um projecto Financiado pela EDCTPEuropean
+and Developing Countries Clinical Trials Partnership .
+                </p>
+            `,
+            'contact':`
+            <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <center><img src='img/hobbies.png'/></center>
+            <h1>Hobbies</h1>
+                <p>
+                    Meu hobbie Favorito é escutar Musica do estilo Hiphop , também sou intusiasta em
+inteligência artificial e robotica
+                    </p>
+
+            `
+    
+        };
+        function getPageContent(page){
+
+            var contentToReturn;
+
+            switch(page){
+                case 'home':
+                    contentToReturn=paginas.home;
+                    break;
+                case 'about':
+                    contentToReturn=paginas.about;
+                    break;
+                case 'service':
+                    contentToReturn=paginas.services;
+                    break;
+                case 'contact':
+                    contentToReturn=paginas.contact;
+                    break;
+                    default:
+                        contentToReturn=paginas.home;
+                        break;
+
+            
+            }
+            document.getElementById('content').innerHTML=contentToReturn;
+        }
+
+    </script>
+
+</head>
+<body onload="getPageContent('home');">
+    <div class="container">
+    <div class="menu">
+      
+         <img src="img/perfileJonNovel.png">
+  
+        <ul>
+            <li><a href="#" onclick="getPageContent('home')">Home</a></li>
+            <li><a href="#" onclick="getPageContent('about')">Quem sou ?</a></li>
+            <li><a href="#" onclick="getPageContent('service')">Oque faço</a></li>
+            <li><a href="#" onclick="getPageContent('contact')">Hobbies</a></li>
+        </ul>
+    </div>
+
+    <!---
+    -->
+
+    <div id="content"> 
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <font color="black"><center><H1> MEU CV</H1></center></font > 
+    </div>
+</div>
+    <div class="footer">
+
+        <div class="socials">
+            <ul>
+                <li>Linkdin  :https://www.linkedin.com/in/jo%C3%A3o-novele-64899894/ </li>
+                <li>Facebook  :</li>
+                <li>Instagram :</li>
+
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
